@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
       title: 'PESTAMA TAB',
       theme: ThemeData(
         // This is the theme of your application.
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.red,
       ),
       home: MyHomePage(),
     );
@@ -35,11 +35,11 @@ class _MyHomePageState extends State<MyHomePage> {
           bottom: TabBar(
             indicator: BoxDecoration(
                 borderRadius: BorderRadius.circular(50), // Creates border
-                color: Color(0xff73c8ff)), //Change background color from here
+                color: Color(0xffab0000)), //Change background color from here
             tabs: [
-              Tab(icon: Icon(Icons.flight)),
-              Tab(icon: Icon(Icons.directions_transit)),
-              Tab(icon: Icon(Icons.directions_car)),
+              Tab(icon: Icon(Icons.article_sharp)),
+              Tab(icon: Icon(Icons.add_box_sharp)),
+              Tab(icon: Icon(Icons.add_shopping_cart_sharp)),
               Tab(icon: Icon(Icons.account_circle_sharp)),
             ],
           ),
@@ -47,9 +47,9 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
         body: TabBarView(
           children: [
-            Icon(Icons.flight, size: 350),
-            Icon(Icons.directions_transit, size: 350),
-            Icon(Icons.directions_car, size: 350),
+            Icon(Icons.article_sharp, size: 350),
+            Icon(Icons.add_box_sharp, size: 350),
+            Icon(Icons.add_shopping_cart_sharp, size: 350),
             Icon(Icons.account_circle_sharp, size: 350),
           ],
         ),
